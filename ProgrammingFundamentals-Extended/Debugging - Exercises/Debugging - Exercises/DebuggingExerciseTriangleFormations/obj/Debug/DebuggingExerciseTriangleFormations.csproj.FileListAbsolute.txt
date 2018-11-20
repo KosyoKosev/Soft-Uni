@@ -1,0 +1,5 @@
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\DebuggingExerciseTriangleFormations\bin\Debug\DebuggingExerciseTriangleFormations.exe.config
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\DebuggingExerciseTriangleFormations\bin\Debug\DebuggingExerciseTriangleFormations.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\DebuggingExerciseTriangleFormations\bin\Debug\DebuggingExerciseTriangleFormations.pdb
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\DebuggingExerciseTriangleFormations\obj\Debug\DebuggingExerciseTriangleFormations.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\DebuggingExerciseTriangleFormations\obj\Debug\DebuggingExerciseTriangleFormations.pdb

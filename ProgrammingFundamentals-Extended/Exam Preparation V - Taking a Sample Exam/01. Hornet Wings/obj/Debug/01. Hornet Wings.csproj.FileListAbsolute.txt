@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\01. Hornet Wings\bin\Debug\_01.Hornet_Wings.exe.config
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\01. Hornet Wings\bin\Debug\_01.Hornet_Wings.exe
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\01. Hornet Wings\bin\Debug\_01.Hornet_Wings.pdb
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\01. Hornet Wings\obj\Debug\01. Hornet Wings.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\01. Hornet Wings\obj\Debug\_01.Hornet_Wings.exe
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\01. Hornet Wings\obj\Debug\_01.Hornet_Wings.pdb

@@ -1,0 +1,5 @@
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\3. Pyramidic\bin\Debug\_3.Pyramidic.exe.config
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\3. Pyramidic\bin\Debug\_3.Pyramidic.exe
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\3. Pyramidic\bin\Debug\_3.Pyramidic.pdb
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\3. Pyramidic\obj\Debug\_3.Pyramidic.exe
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\3. Pyramidic\obj\Debug\_3.Pyramidic.pdb

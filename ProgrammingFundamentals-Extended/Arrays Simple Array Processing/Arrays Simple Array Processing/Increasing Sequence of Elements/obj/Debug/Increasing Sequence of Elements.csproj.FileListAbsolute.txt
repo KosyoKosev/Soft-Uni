@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Increasing Sequence of Elements\bin\Debug\Increasing Sequence of Elements.exe.config
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Increasing Sequence of Elements\bin\Debug\Increasing Sequence of Elements.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Increasing Sequence of Elements\bin\Debug\Increasing Sequence of Elements.pdb
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Increasing Sequence of Elements\obj\Debug\Increasing Sequence of Elements.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Increasing Sequence of Elements\obj\Debug\Increasing Sequence of Elements.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Increasing Sequence of Elements\obj\Debug\Increasing Sequence of Elements.pdb

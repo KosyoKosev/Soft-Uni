@@ -1,0 +1,5 @@
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\DebuggingExerciseTetris\bin\Debug\DebuggingExerciseTetris.exe.config
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\DebuggingExerciseTetris\bin\Debug\DebuggingExerciseTetris.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\DebuggingExerciseTetris\bin\Debug\DebuggingExerciseTetris.pdb
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\DebuggingExerciseTetris\obj\Debug\DebuggingExerciseTetris.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\DebuggingExerciseTetris\obj\Debug\DebuggingExerciseTetris.pdb

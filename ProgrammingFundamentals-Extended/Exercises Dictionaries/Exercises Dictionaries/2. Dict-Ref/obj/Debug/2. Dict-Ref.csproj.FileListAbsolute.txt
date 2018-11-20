@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\2. Dict-Ref\bin\Debug\_2.Dict_Ref.exe.config
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\2. Dict-Ref\bin\Debug\_2.Dict_Ref.exe
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\2. Dict-Ref\bin\Debug\_2.Dict_Ref.pdb
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\2. Dict-Ref\obj\Debug\2. Dict-Ref.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\2. Dict-Ref\obj\Debug\_2.Dict_Ref.exe
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\2. Dict-Ref\obj\Debug\_2.Dict_Ref.pdb

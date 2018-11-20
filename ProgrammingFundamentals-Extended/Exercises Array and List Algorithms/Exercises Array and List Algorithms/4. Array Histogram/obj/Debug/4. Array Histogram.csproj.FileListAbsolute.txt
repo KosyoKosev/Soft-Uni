@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\Exercises Array and List Algorithms\4. Array Histogram\bin\Debug\_4.Array_Histogram.exe.config
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\Exercises Array and List Algorithms\4. Array Histogram\bin\Debug\_4.Array_Histogram.exe
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\Exercises Array and List Algorithms\4. Array Histogram\bin\Debug\_4.Array_Histogram.pdb
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\Exercises Array and List Algorithms\4. Array Histogram\obj\Debug\4. Array Histogram.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\Exercises Array and List Algorithms\4. Array Histogram\obj\Debug\_4.Array_Histogram.exe
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\Exercises Array and List Algorithms\4. Array Histogram\obj\Debug\_4.Array_Histogram.pdb

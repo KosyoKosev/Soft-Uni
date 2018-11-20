@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Integer to Base\bin\Debug\Integer to Base.exe.config
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Integer to Base\bin\Debug\Integer to Base.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Integer to Base\bin\Debug\Integer to Base.pdb
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Integer to Base\obj\Debug\Integer to Base.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Integer to Base\obj\Debug\Integer to Base.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Integer to Base\obj\Debug\Integer to Base.pdb

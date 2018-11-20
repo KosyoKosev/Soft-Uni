@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\1. Letter Repetition\bin\Debug\_1.Letter_Repetition.exe.config
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\1. Letter Repetition\bin\Debug\_1.Letter_Repetition.exe
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\1. Letter Repetition\bin\Debug\_1.Letter_Repetition.pdb
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\1. Letter Repetition\obj\Debug\1. Letter Repetition.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\1. Letter Repetition\obj\Debug\_1.Letter_Repetition.exe
+D:\SoftUni\Exercise\Exercises Dictionaries\Exercises Dictionaries\1. Letter Repetition\obj\Debug\_1.Letter_Repetition.pdb

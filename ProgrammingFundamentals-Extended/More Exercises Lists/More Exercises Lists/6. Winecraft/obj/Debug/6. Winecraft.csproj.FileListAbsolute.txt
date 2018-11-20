@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\6. Winecraft\bin\Debug\_6.Winecraft.exe.config
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\6. Winecraft\bin\Debug\_6.Winecraft.exe
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\6. Winecraft\bin\Debug\_6.Winecraft.pdb
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\6. Winecraft\obj\Debug\6. Winecraft.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\6. Winecraft\obj\Debug\_6.Winecraft.exe
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\6. Winecraft\obj\Debug\_6.Winecraft.pdb

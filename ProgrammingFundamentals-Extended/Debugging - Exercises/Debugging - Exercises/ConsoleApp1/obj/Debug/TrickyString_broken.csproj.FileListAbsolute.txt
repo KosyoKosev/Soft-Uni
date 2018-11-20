@@ -1,0 +1,5 @@
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Debugging - Exercises\ConsoleApp1\obj\Debug\ConsoleApp1.pdb

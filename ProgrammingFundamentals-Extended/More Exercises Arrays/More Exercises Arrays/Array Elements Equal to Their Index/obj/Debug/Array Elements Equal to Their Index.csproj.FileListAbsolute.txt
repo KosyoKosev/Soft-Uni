@@ -1,0 +1,5 @@
+D:\SoftUni\Exercise\More Exercises Arrays\More Exercises Arrays\Array Elements Equal to Their Index\bin\Debug\Array Elements Equal to Their Index.exe.config
+D:\SoftUni\Exercise\More Exercises Arrays\More Exercises Arrays\Array Elements Equal to Their Index\bin\Debug\Array Elements Equal to Their Index.exe
+D:\SoftUni\Exercise\More Exercises Arrays\More Exercises Arrays\Array Elements Equal to Their Index\bin\Debug\Array Elements Equal to Their Index.pdb
+D:\SoftUni\Exercise\More Exercises Arrays\More Exercises Arrays\Array Elements Equal to Their Index\obj\Debug\Array Elements Equal to Their Index.exe
+D:\SoftUni\Exercise\More Exercises Arrays\More Exercises Arrays\Array Elements Equal to Their Index\obj\Debug\Array Elements Equal to Their Index.pdb

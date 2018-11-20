@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exercises Advanced Collections\2. Dict-Ref-Advanced\bin\Debug\_2.Dict_Ref_Advanced.exe.config
+D:\SoftUni\Exercise\Exercises Advanced Collections\2. Dict-Ref-Advanced\bin\Debug\_2.Dict_Ref_Advanced.exe
+D:\SoftUni\Exercise\Exercises Advanced Collections\2. Dict-Ref-Advanced\bin\Debug\_2.Dict_Ref_Advanced.pdb
+D:\SoftUni\Exercise\Exercises Advanced Collections\2. Dict-Ref-Advanced\obj\Debug\2. Dict-Ref-Advanced.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exercises Advanced Collections\2. Dict-Ref-Advanced\obj\Debug\_2.Dict_Ref_Advanced.exe
+D:\SoftUni\Exercise\Exercises Advanced Collections\2. Dict-Ref-Advanced\obj\Debug\_2.Dict_Ref_Advanced.pdb

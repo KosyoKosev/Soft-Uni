@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exercises Advanced Collections\4. Social Media Posts\bin\Debug\_4.Social_Media_Posts.exe.config
+D:\SoftUni\Exercise\Exercises Advanced Collections\4. Social Media Posts\bin\Debug\_4.Social_Media_Posts.exe
+D:\SoftUni\Exercise\Exercises Advanced Collections\4. Social Media Posts\bin\Debug\_4.Social_Media_Posts.pdb
+D:\SoftUni\Exercise\Exercises Advanced Collections\4. Social Media Posts\obj\Debug\4. Social Media Posts.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exercises Advanced Collections\4. Social Media Posts\obj\Debug\_4.Social_Media_Posts.exe
+D:\SoftUni\Exercise\Exercises Advanced Collections\4. Social Media Posts\obj\Debug\_4.Social_Media_Posts.pdb

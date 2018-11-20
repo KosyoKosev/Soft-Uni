@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\01. Wormtest\bin\Debug\_01.Wormtest.exe.config
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\01. Wormtest\bin\Debug\_01.Wormtest.exe
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\01. Wormtest\bin\Debug\_01.Wormtest.pdb
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\01. Wormtest\obj\Debug\01. Wormtest.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\01. Wormtest\obj\Debug\_01.Wormtest.exe
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\01. Wormtest\obj\Debug\_01.Wormtest.pdb

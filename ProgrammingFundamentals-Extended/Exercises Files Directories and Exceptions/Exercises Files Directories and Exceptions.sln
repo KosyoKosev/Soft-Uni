@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Filter Extensions", "1. Filter Extensions\1. Filter Extensions.csproj", "{F25A4873-1ED5-49CB-A4BF-4DB9311CF303}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. HTML Contents", "2. HTML Contents\2. HTML Contents.csproj", "{8E165EC1-C8B1-46CC-97AA-D50CCEA0C3FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. Re-Directory", "4. Re-Directory\4. Re-Directory.csproj", "{F90A1940-6B7E-4C5F-BFE9-B86C77A8C89A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F25A4873-1ED5-49CB-A4BF-4DB9311CF303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F25A4873-1ED5-49CB-A4BF-4DB9311CF303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F25A4873-1ED5-49CB-A4BF-4DB9311CF303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F25A4873-1ED5-49CB-A4BF-4DB9311CF303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E165EC1-C8B1-46CC-97AA-D50CCEA0C3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E165EC1-C8B1-46CC-97AA-D50CCEA0C3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E165EC1-C8B1-46CC-97AA-D50CCEA0C3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E165EC1-C8B1-46CC-97AA-D50CCEA0C3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F90A1940-6B7E-4C5F-BFE9-B86C77A8C89A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F90A1940-6B7E-4C5F-BFE9-B86C77A8C89A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F90A1940-6B7E-4C5F-BFE9-B86C77A8C89A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F90A1940-6B7E-4C5F-BFE9-B86C77A8C89A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

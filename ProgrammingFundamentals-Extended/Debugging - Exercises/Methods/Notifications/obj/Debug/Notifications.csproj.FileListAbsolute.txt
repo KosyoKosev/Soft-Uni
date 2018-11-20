@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Notifications\bin\Debug\Notifications.exe.config
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Notifications\bin\Debug\Notifications.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Notifications\bin\Debug\Notifications.pdb
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Notifications\obj\Debug\Notifications.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Notifications\obj\Debug\Notifications.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Notifications\obj\Debug\Notifications.pdb

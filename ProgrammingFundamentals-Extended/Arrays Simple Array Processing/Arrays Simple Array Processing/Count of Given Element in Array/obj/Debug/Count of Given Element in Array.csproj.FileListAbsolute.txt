@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Given Element in Array\bin\Debug\Count of Given Element in Array.exe.config
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Given Element in Array\bin\Debug\Count of Given Element in Array.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Given Element in Array\bin\Debug\Count of Given Element in Array.pdb
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Given Element in Array\obj\Debug\Count of Given Element in Array.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Given Element in Array\obj\Debug\Count of Given Element in Array.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Given Element in Array\obj\Debug\Count of Given Element in Array.pdb

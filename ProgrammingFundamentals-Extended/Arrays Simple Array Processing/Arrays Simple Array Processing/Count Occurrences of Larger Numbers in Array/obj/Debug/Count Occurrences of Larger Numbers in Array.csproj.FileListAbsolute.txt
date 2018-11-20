@@ -1,0 +1,5 @@
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count Occurrences of Larger Numbers in Array\bin\Debug\Count Occurrences of Larger Numbers in Array.exe.config
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count Occurrences of Larger Numbers in Array\bin\Debug\Count Occurrences of Larger Numbers in Array.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count Occurrences of Larger Numbers in Array\bin\Debug\Count Occurrences of Larger Numbers in Array.pdb
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count Occurrences of Larger Numbers in Array\obj\Debug\Count Occurrences of Larger Numbers in Array.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count Occurrences of Larger Numbers in Array\obj\Debug\Count Occurrences of Larger Numbers in Array.pdb

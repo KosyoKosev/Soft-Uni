@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exercises Strings and Text Processing\2. JSON stringify\bin\Debug\_2.JSON_stringify.exe.config
+D:\SoftUni\Exercise\Exercises Strings and Text Processing\2. JSON stringify\bin\Debug\_2.JSON_stringify.exe
+D:\SoftUni\Exercise\Exercises Strings and Text Processing\2. JSON stringify\bin\Debug\_2.JSON_stringify.pdb
+D:\SoftUni\Exercise\Exercises Strings and Text Processing\2. JSON stringify\obj\Debug\2. JSON stringify.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exercises Strings and Text Processing\2. JSON stringify\obj\Debug\_2.JSON_stringify.exe
+D:\SoftUni\Exercise\Exercises Strings and Text Processing\2. JSON stringify\obj\Debug\_2.JSON_stringify.pdb

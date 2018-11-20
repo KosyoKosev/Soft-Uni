@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Note Statistics\bin\Debug\Note Statistics.exe.config
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Note Statistics\bin\Debug\Note Statistics.exe
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Note Statistics\bin\Debug\Note Statistics.pdb
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Note Statistics\obj\Debug\Note Statistics.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Note Statistics\obj\Debug\Note Statistics.exe
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Note Statistics\obj\Debug\Note Statistics.pdb

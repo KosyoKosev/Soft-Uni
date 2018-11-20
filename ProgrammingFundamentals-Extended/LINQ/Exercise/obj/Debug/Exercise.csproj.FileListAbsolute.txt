@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\LINQ\Exercise\bin\Debug\Exercise.exe.config
+D:\SoftUni\Exercise\LINQ\Exercise\bin\Debug\Exercise.exe
+D:\SoftUni\Exercise\LINQ\Exercise\bin\Debug\Exercise.pdb
+D:\SoftUni\Exercise\LINQ\Exercise\obj\Debug\Exercise.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\LINQ\Exercise\obj\Debug\Exercise.exe
+D:\SoftUni\Exercise\LINQ\Exercise\obj\Debug\Exercise.pdb

@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\03. Endurance Rally\bin\Debug\_03.Endurance_Rally.exe.config
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\03. Endurance Rally\bin\Debug\_03.Endurance_Rally.exe
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\03. Endurance Rally\bin\Debug\_03.Endurance_Rally.pdb
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\03. Endurance Rally\obj\Debug\03. Endurance Rally.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\03. Endurance Rally\obj\Debug\_03.Endurance_Rally.exe
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\03. Endurance Rally\obj\Debug\_03.Endurance_Rally.pdb

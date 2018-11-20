@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\4. Re-Directory\bin\Debug\_4.Re_Directory.exe.config
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\4. Re-Directory\bin\Debug\_4.Re_Directory.exe
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\4. Re-Directory\bin\Debug\_4.Re_Directory.pdb
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\4. Re-Directory\obj\Debug\4. Re-Directory.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\4. Re-Directory\obj\Debug\_4.Re_Directory.exe
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\4. Re-Directory\obj\Debug\_4.Re_Directory.pdb

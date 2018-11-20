@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. Line Numbers", "2. Line Numbers\2. Line Numbers.csproj", "{FCCB6864-7968-4039-BEFC-949E8F65D9E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. Odd Lines", "1. Odd Lines\1. Odd Lines.csproj", "{53324D88-5B84-4A25-A3AB-07D359EC4A75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. Word Count", "3. Word Count\3. Word Count.csproj", "{4A46049F-5F18-4CF1-B92E-14EFB0E30422}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCCB6864-7968-4039-BEFC-949E8F65D9E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCCB6864-7968-4039-BEFC-949E8F65D9E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCCB6864-7968-4039-BEFC-949E8F65D9E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCCB6864-7968-4039-BEFC-949E8F65D9E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53324D88-5B84-4A25-A3AB-07D359EC4A75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53324D88-5B84-4A25-A3AB-07D359EC4A75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53324D88-5B84-4A25-A3AB-07D359EC4A75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53324D88-5B84-4A25-A3AB-07D359EC4A75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A46049F-5F18-4CF1-B92E-14EFB0E30422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A46049F-5F18-4CF1-B92E-14EFB0E30422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A46049F-5F18-4CF1-B92E-14EFB0E30422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A46049F-5F18-4CF1-B92E-14EFB0E30422}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

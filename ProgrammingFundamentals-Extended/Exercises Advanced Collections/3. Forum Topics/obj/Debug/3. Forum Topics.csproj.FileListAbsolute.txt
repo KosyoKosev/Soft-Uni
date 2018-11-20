@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exercises Advanced Collections\3. Forum Topics\bin\Debug\_3.Forum_Topics.exe.config
+D:\SoftUni\Exercise\Exercises Advanced Collections\3. Forum Topics\bin\Debug\_3.Forum_Topics.exe
+D:\SoftUni\Exercise\Exercises Advanced Collections\3. Forum Topics\bin\Debug\_3.Forum_Topics.pdb
+D:\SoftUni\Exercise\Exercises Advanced Collections\3. Forum Topics\obj\Debug\3. Forum Topics.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exercises Advanced Collections\3. Forum Topics\obj\Debug\_3.Forum_Topics.exe
+D:\SoftUni\Exercise\Exercises Advanced Collections\3. Forum Topics\obj\Debug\_3.Forum_Topics.pdb

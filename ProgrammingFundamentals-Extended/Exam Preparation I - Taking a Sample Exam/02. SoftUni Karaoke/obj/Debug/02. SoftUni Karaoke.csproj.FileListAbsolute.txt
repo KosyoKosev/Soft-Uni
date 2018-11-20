@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\02. SoftUni Karaoke\bin\Debug\_02.SoftUni_Karaoke.exe.config
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\02. SoftUni Karaoke\bin\Debug\_02.SoftUni_Karaoke.exe
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\02. SoftUni Karaoke\bin\Debug\_02.SoftUni_Karaoke.pdb
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\02. SoftUni Karaoke\obj\Debug\02. SoftUni Karaoke.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\02. SoftUni Karaoke\obj\Debug\_02.SoftUni_Karaoke.exe
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\02. SoftUni Karaoke\obj\Debug\_02.SoftUni_Karaoke.pdb

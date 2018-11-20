@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. Hornet Wings", "01. Hornet Wings\01. Hornet Wings.csproj", "{27F76418-4D9B-4133-B70C-4D2A09307525}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. Hornet Comm", "02. Hornet Comm\02. Hornet Comm.csproj", "{6B48178F-B0CF-43FB-95A7-53E486F7C146}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. Hornet Assault", "03. Hornet Assault\03. Hornet Assault.csproj", "{743937C2-3DFB-4704-83A5-82E8899013CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27F76418-4D9B-4133-B70C-4D2A09307525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27F76418-4D9B-4133-B70C-4D2A09307525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27F76418-4D9B-4133-B70C-4D2A09307525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27F76418-4D9B-4133-B70C-4D2A09307525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B48178F-B0CF-43FB-95A7-53E486F7C146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B48178F-B0CF-43FB-95A7-53E486F7C146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B48178F-B0CF-43FB-95A7-53E486F7C146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B48178F-B0CF-43FB-95A7-53E486F7C146}.Release|Any CPU.Build.0 = Release|Any CPU
+		{743937C2-3DFB-4704-83A5-82E8899013CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743937C2-3DFB-4704-83A5-82E8899013CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743937C2-3DFB-4704-83A5-82E8899013CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743937C2-3DFB-4704-83A5-82E8899013CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

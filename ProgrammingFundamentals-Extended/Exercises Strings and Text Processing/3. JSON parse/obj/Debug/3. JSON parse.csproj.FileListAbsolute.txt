@@ -1,0 +1,5 @@
+D:\SoftUni\Exercise\Exercises Strings and Text Processing\3. JSON parse\bin\Debug\_3.JSON_parse.exe.config
+D:\SoftUni\Exercise\Exercises Strings and Text Processing\3. JSON parse\bin\Debug\_3.JSON_parse.exe
+D:\SoftUni\Exercise\Exercises Strings and Text Processing\3. JSON parse\bin\Debug\_3.JSON_parse.pdb
+D:\SoftUni\Exercise\Exercises Strings and Text Processing\3. JSON parse\obj\Debug\_3.JSON_parse.exe
+D:\SoftUni\Exercise\Exercises Strings and Text Processing\3. JSON parse\obj\Debug\_3.JSON_parse.pdb

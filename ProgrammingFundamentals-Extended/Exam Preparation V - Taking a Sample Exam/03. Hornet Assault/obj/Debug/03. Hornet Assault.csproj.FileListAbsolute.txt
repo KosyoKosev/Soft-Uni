@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\03. Hornet Assault\bin\Debug\_03.Hornet_Assault.exe.config
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\03. Hornet Assault\bin\Debug\_03.Hornet_Assault.exe
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\03. Hornet Assault\bin\Debug\_03.Hornet_Assault.pdb
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\03. Hornet Assault\obj\Debug\03. Hornet Assault.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\03. Hornet Assault\obj\Debug\_03.Hornet_Assault.exe
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\03. Hornet Assault\obj\Debug\_03.Hornet_Assault.pdb

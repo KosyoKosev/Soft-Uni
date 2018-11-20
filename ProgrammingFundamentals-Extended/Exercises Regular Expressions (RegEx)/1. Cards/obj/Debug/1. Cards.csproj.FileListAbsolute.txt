@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exercises Regular Expressions (RegEx)\1. Cards\bin\Debug\_1.Cards.exe.config
+D:\SoftUni\Exercise\Exercises Regular Expressions (RegEx)\1. Cards\bin\Debug\_1.Cards.exe
+D:\SoftUni\Exercise\Exercises Regular Expressions (RegEx)\1. Cards\bin\Debug\_1.Cards.pdb
+D:\SoftUni\Exercise\Exercises Regular Expressions (RegEx)\1. Cards\obj\Debug\1. Cards.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exercises Regular Expressions (RegEx)\1. Cards\obj\Debug\_1.Cards.exe
+D:\SoftUni\Exercise\Exercises Regular Expressions (RegEx)\1. Cards\obj\Debug\_1.Cards.pdb

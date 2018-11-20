@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Equal Sequence of Elements in Array\bin\Debug\Equal Sequence of Elements in Array.exe.config
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Equal Sequence of Elements in Array\bin\Debug\Equal Sequence of Elements in Array.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Equal Sequence of Elements in Array\bin\Debug\Equal Sequence of Elements in Array.pdb
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Equal Sequence of Elements in Array\obj\Debug\Equal Sequence of Elements in Array.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Equal Sequence of Elements in Array\obj\Debug\Equal Sequence of Elements in Array.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Equal Sequence of Elements in Array\obj\Debug\Equal Sequence of Elements in Array.pdb

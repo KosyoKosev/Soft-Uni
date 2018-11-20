@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Integer Insertion\bin\Debug\Integer Insertion.exe.config
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Integer Insertion\bin\Debug\Integer Insertion.exe
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Integer Insertion\bin\Debug\Integer Insertion.pdb
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Integer Insertion\obj\Debug\Integer Insertion.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Integer Insertion\obj\Debug\Integer Insertion.exe
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Integer Insertion\obj\Debug\Integer Insertion.pdb

@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\StringRepeater\bin\Debug\StringRepeater.exe.config
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\StringRepeater\bin\Debug\StringRepeater.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\StringRepeater\bin\Debug\StringRepeater.pdb
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\StringRepeater\obj\Debug\StringRepeater.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\StringRepeater\obj\Debug\StringRepeater.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\StringRepeater\obj\Debug\StringRepeater.pdb

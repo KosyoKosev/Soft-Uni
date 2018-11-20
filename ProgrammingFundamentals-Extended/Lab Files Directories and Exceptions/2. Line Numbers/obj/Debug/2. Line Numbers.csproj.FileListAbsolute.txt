@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Lab Files Directories and Exceptions\2. Line Numbers\bin\Debug\_2.Line_Numbers.exe.config
+D:\SoftUni\Exercise\Lab Files Directories and Exceptions\2. Line Numbers\bin\Debug\_2.Line_Numbers.exe
+D:\SoftUni\Exercise\Lab Files Directories and Exceptions\2. Line Numbers\bin\Debug\_2.Line_Numbers.pdb
+D:\SoftUni\Exercise\Lab Files Directories and Exceptions\2. Line Numbers\obj\Debug\2. Line Numbers.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Lab Files Directories and Exceptions\2. Line Numbers\obj\Debug\_2.Line_Numbers.exe
+D:\SoftUni\Exercise\Lab Files Directories and Exceptions\2. Line Numbers\obj\Debug\_2.Line_Numbers.pdb

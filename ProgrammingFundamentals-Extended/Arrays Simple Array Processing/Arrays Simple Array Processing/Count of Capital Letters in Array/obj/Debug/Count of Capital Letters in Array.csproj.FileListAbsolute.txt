@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Capital Letters in Array\bin\Debug\Count of Capital Letters in Array.exe.config
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Capital Letters in Array\bin\Debug\Count of Capital Letters in Array.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Capital Letters in Array\bin\Debug\Count of Capital Letters in Array.pdb
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Capital Letters in Array\obj\Debug\Count of Capital Letters in Array.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Capital Letters in Array\obj\Debug\Count of Capital Letters in Array.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Count of Capital Letters in Array\obj\Debug\Count of Capital Letters in Array.pdb

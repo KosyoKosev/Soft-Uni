@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\2. Stateless\bin\Debug\_2.Stateless.exe.config
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\2. Stateless\bin\Debug\_2.Stateless.exe
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\2. Stateless\bin\Debug\_2.Stateless.pdb
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\2. Stateless\obj\Debug\2. Stateless.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\2. Stateless\obj\Debug\_2.Stateless.exe
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\2. Stateless\obj\Debug\_2.Stateless.pdb

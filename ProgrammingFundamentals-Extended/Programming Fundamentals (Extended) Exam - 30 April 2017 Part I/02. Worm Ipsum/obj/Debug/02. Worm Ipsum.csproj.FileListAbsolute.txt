@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\02. Worm Ipsum\bin\Debug\_02.Worm_Ipsum.exe.config
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\02. Worm Ipsum\bin\Debug\_02.Worm_Ipsum.exe
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\02. Worm Ipsum\bin\Debug\_02.Worm_Ipsum.pdb
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\02. Worm Ipsum\obj\Debug\02. Worm Ipsum.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\02. Worm Ipsum\obj\Debug\_02.Worm_Ipsum.exe
+D:\SoftUni\Exercise\Programming Fundamentals (Extended) Exam - 30 April 2017 Part I\02. Worm Ipsum\obj\Debug\_02.Worm_Ipsum.pdb

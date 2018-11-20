@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\1. Serialize String\bin\Debug\_1.Serialize_String.exe.config
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\1. Serialize String\bin\Debug\_1.Serialize_String.exe
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\1. Serialize String\bin\Debug\_1.Serialize_String.pdb
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\1. Serialize String\obj\Debug\1. Serialize String.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\1. Serialize String\obj\Debug\_1.Serialize_String.exe
+D:\SoftUni\Exercise\More Exercises Strings and Text Processing\1. Serialize String\obj\Debug\_1.Serialize_String.pdb

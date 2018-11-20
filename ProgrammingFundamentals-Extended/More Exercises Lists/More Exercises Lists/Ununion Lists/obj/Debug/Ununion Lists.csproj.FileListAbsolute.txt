@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Ununion Lists\bin\Debug\Ununion Lists.exe.config
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Ununion Lists\bin\Debug\Ununion Lists.exe
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Ununion Lists\bin\Debug\Ununion Lists.pdb
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Ununion Lists\obj\Debug\Ununion Lists.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Ununion Lists\obj\Debug\Ununion Lists.exe
+D:\SoftUni\Exercise\More Exercises Lists\More Exercises Lists\Ununion Lists\obj\Debug\Ununion Lists.pdb

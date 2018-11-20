@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\More Exercises Array and List Algorithms\2. Japanese Roulette\bin\Debug\_2.Japanese_Roulette.exe.config
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\More Exercises Array and List Algorithms\2. Japanese Roulette\bin\Debug\_2.Japanese_Roulette.exe
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\More Exercises Array and List Algorithms\2. Japanese Roulette\bin\Debug\_2.Japanese_Roulette.pdb
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\More Exercises Array and List Algorithms\2. Japanese Roulette\obj\Debug\2. Japanese Roulette.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\More Exercises Array and List Algorithms\2. Japanese Roulette\obj\Debug\_2.Japanese_Roulette.exe
+D:\SoftUni\Exercise\Exercises Array and List Algorithms\More Exercises Array and List Algorithms\2. Japanese Roulette\obj\Debug\_2.Japanese_Roulette.pdb

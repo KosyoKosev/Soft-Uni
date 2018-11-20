@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Array Symmetry\bin\Debug\Array_Symmetry.exe.config
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Array Symmetry\bin\Debug\Array_Symmetry.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Array Symmetry\bin\Debug\Array_Symmetry.pdb
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Array Symmetry\obj\Debug\Array Symmetry.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Array Symmetry\obj\Debug\Array_Symmetry.exe
+D:\SoftUni\Exercise\Arrays Simple Array Processing\Arrays Simple Array Processing\Array Symmetry\obj\Debug\Array_Symmetry.pdb

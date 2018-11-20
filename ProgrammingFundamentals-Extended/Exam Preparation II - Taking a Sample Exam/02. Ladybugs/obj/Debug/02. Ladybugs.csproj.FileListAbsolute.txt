@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exam Preparation II - Taking a Sample Exam\02. Ladybugs\obj\Debug\02. Ladybugs.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exam Preparation II - Taking a Sample Exam\02. Ladybugs\bin\Debug\_02.Ladybugs.exe.config
+D:\SoftUni\Exercise\Exam Preparation II - Taking a Sample Exam\02. Ladybugs\bin\Debug\_02.Ladybugs.exe
+D:\SoftUni\Exercise\Exam Preparation II - Taking a Sample Exam\02. Ladybugs\bin\Debug\_02.Ladybugs.pdb
+D:\SoftUni\Exercise\Exam Preparation II - Taking a Sample Exam\02. Ladybugs\obj\Debug\_02.Ladybugs.exe
+D:\SoftUni\Exercise\Exam Preparation II - Taking a Sample Exam\02. Ladybugs\obj\Debug\_02.Ladybugs.pdb

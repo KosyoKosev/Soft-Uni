@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\04. Hornet Armada\bin\Debug\_04.Hornet_Armada.exe.config
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\04. Hornet Armada\bin\Debug\_04.Hornet_Armada.exe
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\04. Hornet Armada\bin\Debug\_04.Hornet_Armada.pdb
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\04. Hornet Armada\obj\Debug\04. Hornet Armada.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\04. Hornet Armada\obj\Debug\_04.Hornet_Armada.exe
+D:\SoftUni\Exercise\Exam Preparation V - Taking a Sample Exam\04. Hornet Armada\obj\Debug\_04.Hornet_Armada.pdb

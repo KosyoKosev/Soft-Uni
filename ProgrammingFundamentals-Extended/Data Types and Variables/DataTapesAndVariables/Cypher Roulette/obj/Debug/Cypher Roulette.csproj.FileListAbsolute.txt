@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Data Types and Variables\DataTapesAndVariables\Cypher Roulette\bin\Debug\Cypher Roulette.exe.config
+D:\SoftUni\Exercise\Data Types and Variables\DataTapesAndVariables\Cypher Roulette\bin\Debug\Cypher Roulette.exe
+D:\SoftUni\Exercise\Data Types and Variables\DataTapesAndVariables\Cypher Roulette\bin\Debug\Cypher Roulette.pdb
+D:\SoftUni\Exercise\Data Types and Variables\DataTapesAndVariables\Cypher Roulette\obj\Debug\Cypher Roulette.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Data Types and Variables\DataTapesAndVariables\Cypher Roulette\obj\Debug\Cypher Roulette.exe
+D:\SoftUni\Exercise\Data Types and Variables\DataTapesAndVariables\Cypher Roulette\obj\Debug\Cypher Roulette.pdb

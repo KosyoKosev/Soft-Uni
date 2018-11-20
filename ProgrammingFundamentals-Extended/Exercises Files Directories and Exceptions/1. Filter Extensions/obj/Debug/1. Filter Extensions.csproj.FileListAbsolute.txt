@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\1. Filter Extensions\bin\Debug\_1.Filter_Extensions.exe.config
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\1. Filter Extensions\bin\Debug\_1.Filter_Extensions.exe
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\1. Filter Extensions\bin\Debug\_1.Filter_Extensions.pdb
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\1. Filter Extensions\obj\Debug\1. Filter Extensions.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\1. Filter Extensions\obj\Debug\_1.Filter_Extensions.exe
+D:\SoftUni\Exercise\Exercises Files Directories and Exceptions\1. Filter Extensions\obj\Debug\_1.Filter_Extensions.pdb

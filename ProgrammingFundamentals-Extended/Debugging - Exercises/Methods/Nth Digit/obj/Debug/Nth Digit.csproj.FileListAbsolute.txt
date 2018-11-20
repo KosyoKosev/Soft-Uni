@@ -1,0 +1,5 @@
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Nth Digit\bin\Debug\Nth Digit.exe.config
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Nth Digit\bin\Debug\Nth Digit.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Nth Digit\bin\Debug\Nth Digit.pdb
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Nth Digit\obj\Debug\Nth Digit.exe
+D:\SoftUni\Exercise\Debugging - Exercises\Methods\Nth Digit\obj\Debug\Nth Digit.pdb

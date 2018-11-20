@@ -1,0 +1,6 @@
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\04. Winning Ticket\bin\Debug\_04.Winning_Ticket.exe.config
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\04. Winning Ticket\bin\Debug\_04.Winning_Ticket.exe
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\04. Winning Ticket\bin\Debug\_04.Winning_Ticket.pdb
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\04. Winning Ticket\obj\Debug\04. Winning Ticket.csprojResolveAssemblyReference.cache
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\04. Winning Ticket\obj\Debug\_04.Winning_Ticket.exe
+D:\SoftUni\Exercise\Exam Preparation I - Taking a Sample Exam\04. Winning Ticket\obj\Debug\_04.Winning_Ticket.pdb
