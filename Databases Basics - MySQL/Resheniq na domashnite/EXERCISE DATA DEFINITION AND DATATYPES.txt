@@ -1,0 +1,251 @@
+CREATE DATABASE minions;
+
+USE minions;
+
+#2
+
+CREATE TABLE minions (
+	id INT PRIMARY KEY,
+    name VARCHAR(30),
+    age INT(3)
+);
+
+CREATE TABLE towns (
+	id INT PRIMARY KEY,
+    name VARCHAR(30)
+);
+
+#3
+
+ALTER TABLE `minions`
+ADD COLUMN `town_id` INT,
+ADD CONSTRAINT `fk_minions_towns` 
+FOREIGN KEY (`town_id`)
+REFERENCES `towns` (`id`);
+
+
+#4
+INSERT INTO `towns` (`id`, `name`) VALUES (1, 'Sofia');
+INSERT INTO `towns` (`id`, `name`) VALUES (2, 'Plovdiv');
+INSERT INTO `towns` (`id`, `name`) VALUES (3, 'Varna');
+
+INSERT INTO minions (`id`, `name`, `age`, `town_id`) VALUES (1, 'Kevin', 22, 1);
+INSERT INTO minions (`id`, `name`, `age`, `town_id`) VALUES (2, 'Bob', 15, 3);
+INSERT INTO minions (`id`, `name`, `town_id`) VALUES (3, 'Steward', 2);
+
+#5
+
+TRUNCATE TABLE minions.minions;
+
+#6
+
+DROP TABLES minions;
+DROP TABLES towns;
+
+
+#7
+
+CREATE TABLE people (
+	id INT UNIQUE AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(200) NOT NULL,
+    picture MEDIUMBLOB,
+    height FLOAT(5,2),
+    weight FLOAT(5,2),
+    gender CHAR(1) NOT NULL,
+    birthdate DATE NOT NULL,
+    biography TEXT
+);
+
+INSERT INTO people (`name`, `height`, `weight`, `gender`, `birthdate`, `biography`)
+VALUES ('Kosyo', 180, 85, 'm', '1985-04-15', ''),
+	   ('Pesho', 183, 80, 'm', '1986-05-13', ''),
+       ('Maria', 185, 85, 'f', '1983-07-20', ''),
+       ('Hristo', 177, 79, 'm', '1990-01-18', ''),
+       ('Kosyo', 178, 78, 'm', '1991-10-01', '');
+       
+#8
+
+CREATE TABLE users (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR (30) UNIQUE NOT NULL,
+    password VARCHAR (26) NOT NULL,
+    profile_picture BLOB,
+    last_login_time DATETIME,
+    is_deleted BOOL
+);    
+
+INSERT INTO users (`username`, `password`, `last_login_time`, `is_deleted`)
+VALUES ('k', '45', '2017-05-21 00:00:00', FALSE), 
+	   ('v', '4', '2017-05-22 00:00:01', FALSE),
+       ('j', '5', '2017-05-23 00:00:02', FALSE),
+       ('m', '455', '2017-05-24 00:00:03', FALSE),
+       ('a', '456', '2017-05-25 00:00:04', FALSE);
+       
+#9
+
+ALTER TABLE users
+DROP PRIMARY KEY ,
+ADD CONSTRAINT pk_users PRIMARY KEY (id, username);
+
+#10
+
+ALTER TABLE `users`
+CHANGE COLUMN `last_login_time` `last_login_time` DATETIME DEFAULT NOW();
+
+#11
+
+ALTER TABLE `users`
+DROP PRIMARY KEY ,
+ADD CONSTRAINT pk_users PRIMARY KEY (id),
+CHANGE COLUMN `username` `username` VARCHAR (30) UNIQUE NOT NULL;
+
+#12
+
+CREATE DATABASE movies;
+USE movies;
+
+CREATE TABLE directors (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    director_name VARCHAR (50) NOT NULL,
+    notes TEXT
+);
+
+CREATE TABLE genres (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    genre_name VARCHAR (50) NOT NULL,
+    notes TEXT
+);
+
+CREATE TABLE categories (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    category_name VARCHAR (50) NOT NULL,
+    notes TEXT
+); 
+
+CREATE TABLE movies (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR (50) NOT NULL,
+    director_id INT NOT NULL,
+    copyright_year DATE NOT NULL,
+    length TIME NOT NULL,
+    genre_id INT NOT NULL,
+    category_id INT NOT NULL,
+    rating FLOAT (4,2),
+    notes TEXT
+);
+
+INSERT INTO directors (`director_name`)
+VALUES ('Kosyo'), ('Victoria'), ('Pesho'), ('Ivan'), ('Dobry');
+
+INSERT INTO genres (`genre_name`)
+VALUES ('Action'), ('Comedy'), ('Thriller'), ('History'), ('Animation');
+
+INSERT INTO categories (`category_name`)
+VALUES ('Documentary'), ('Comedy'), ('Foreign films'), ('Foreign language films'), ('Animation');
+
+INSERT INTO movies (`title`, `director_id`, `copyright_year`, `length`, `genre_id`, `category_id`)
+VALUES ('dsadada', 1, '2017-03-22', '02:22:22', 3, 2),
+	   ('dsadada', 2, '2016-03-22', '02:22:22', 2, 1),
+       ('dsadada', 3, '2015-03-22', '02:22:22', 1, 3),
+       ('dsadada', 4, '2014-03-22', '02:22:22', 5, 4),
+       ('dsadada', 5, '2013-03-22', '02:22:22', 4, 5);
+       
+#13
+
+CREATE DATABASE car_rental;
+USE car_rental;
+
+CREATE TABLE categories (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    category VARCHAR (50) NOT NULL,
+    daily_rate DECIMAL (8,2) NOT NULL,
+    weekly_rate DECIMAL (8,2) NOT NULL,
+    monthly_rate DECIMAL (8,2) NOT NULL,
+    weekend_rate DECIMAL (8,2) NOT NULL
+);
+
+CREATE TABLE cars (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    plate_number VARCHAR (15) NOT NULL,
+    make VARCHAR (15) NOT NULL,
+    model VARCHAR (15) NOT NULL,
+    car_year DATE NOT NULL,
+    category_id INT NOT NULL,
+    doors INT (1) NOT NULL,
+    picture BLOB,
+    car_condition VARCHAR (100) NOT NULL,
+    available VARCHAR (15) NOT NULL
+);
+
+CREATE TABLE employees (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR (15) NOT NULL,
+    last_name VARCHAR (15) NOT NULL,
+    title VARCHAR (50) NOT NULL,
+    notes VARCHAR (200)
+);
+
+CREATE TABLE customers (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    driver_licence_number VARCHAR (15) NOT NULL,
+    full_name VARCHAR (60) NOT NULL,
+    address VARCHAR (100) NOT NULL,
+    city VARCHAR (50) NOT NULL,
+    zip_code VARCHAR (15),
+    notes VARCHAR (200)
+);
+
+CREATE TABLE rental_orders (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    employee_id INT NOT NULL,
+    customer_id INT NOT NULL,
+    car_id INT NOT NULL,
+    car_condition VARCHAR (100) NOT NULL,
+    tank_level VARCHAR (10) NOT NULL,
+    kilometrage_start VARCHAR (7) NOT NULL,
+    kilometrage_end VARCHAR (7) NOT NULL,
+    total_kilometrage VARCHAR (7) NOT NULL,
+    start_date DATE NOT NULL,
+    end_date DATE NOT NULL,
+    total_days INT (4) NOT NULL,
+    rate_applied VARCHAR (10) NOT NULL,
+    tax_rate DECIMAL (8,2) NOT NULL,
+    order_status VARCHAR (50) NOT NULL,
+    notes VARCHAR (200)
+);
+
+INSERT INTO categories (`category`, `daily_rate`, `weekly_rate`, `monthly_rate`, `weekend_rate`)
+VALUES ('van', 25.50, 100.00, 350, 40),
+	   ('van', 25.50, 100.00, 350, 40),
+       ('van', 25.50, 100.00, 350, 40);
+       
+INSERT INTO cars (plate_number, make, model, car_year, category_id, doors, car_condition, available) 
+VALUES ('dadsadas', 'dada', 'dasda', '2010-12-12', 1, 5, 'dasdas', 'yes'), 
+	   ('dadsadas', 'dada', 'dasda', '2010-12-12', 2, 5, 'dasdas', 'yes'),
+       ('dadsadas', 'dada', 'dasda', '2010-12-12', 3, 5, 'dasdas', 'yes');
+       
+INSERT INTO employees (first_name, last_name, title)
+VALUES ('dasda', 'dsada', 'dasdsa'), ('dasda', 'dsada', 'dasdsa'), ('dasda', 'dsada', 'dasdsa');
+
+INSERT INTO customers (driver_licence_number, full_name, address, city)
+VALUES ('dadada', 'dadsda', 'dadsaa', 'dsadsa'), ('dadada', 'dadsda', 'dadsaa', 'dsadsa'), ('dadada', 'dadsda', 'dadsaa', 'dsadsa');
+
+INSERT INTO rental_orders (employee_id, customer_id, car_id, car_condition, tank_level, kilometrage_start, kilometrage_end, total_kilometrage, start_date, end_date, total_days, rate_applied, tax_rate, order_status)
+VALUES (1, 1, 1, 'dasa', 'dasd', 'dasa', 'dsda', 'dasda', '2010-12-12', '2010-12-21', 9, 'dasda', 350, 'dsada'),
+	   (1, 1, 1, 'dasa', 'dasd', 'dasa', 'dsda', 'dasda', '2010-12-12', '2010-12-21', 9, 'dasda', 350, 'dsada'),
+       (1, 1, 1, 'dasa', 'dasd', 'dasa', 'dsda', 'dasda', '2010-12-12', '2010-12-21', 9, 'dasda', 350, 'dsada');
+       
+#18
+
+INSERT INTO towns (`name`)
+VALUES ('Sofia'), ('Plovdiv'), ('Varna'), ('Burgas');
+
+INSERT INTO departments (`name`)
+VALUES ('Engineering'), ('Sales, Marketing'), ('Software Development'), ('Quality Assurance');
+
+INSERT INTO employee ( first_name, middle_name, last_name, job_title, department_id, hire_date, salary)
+VALUES ('Ivan', 'Ivanov', 'Ivanov',	'.NET Developer', 4, '01/02/2013', 3500.00),
+       ('Petar', 'Petrov', 'Petrov', 'Senior Engineer',	1, '02/03/2004', 4000.00),
+       ('Maria', 'Petrova', 'Ivanova', 'Intern', 5,	'28/08/2016', 525.25),
+       ('Georgi', 'Terziev', 'Ivanov', 'CEO', 2, '09/12/2007', 3000.00),
+       ('Peter', 'Pan', 'Pan', 'Intern', 3,	'28/08/2016', 599.88);

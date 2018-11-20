@@ -1,0 +1,286 @@
+CREATE DATABASE airport_management_system;
+USE airport_management_system;
+
+CREATE TABLE towns (
+	town_id INT PRIMARY KEY,
+	town_name VARCHAR(30) NOT NULL
+);
+
+CREATE TABLE airports (
+	airport_id INT PRIMARY KEY,
+    airport_name VARCHAR(50) NOT NULL,
+    town_id INT,
+    CONSTRAINT fk_airports_towns FOREIGN KEY (town_id)
+    REFERENCES towns(town_id)
+);
+
+CREATE TABLE airlines (
+	airline_id INT PRIMARY KEY,
+    airline_name VARCHAR(30) NOT NULL,
+    nationality VARCHAR(30) NOT NULL,
+    rating INT DEFAULT 0
+);
+
+CREATE TABLE customers (
+	customer_id INT PRIMARY KEY,
+    first_name VARCHAR(20) NOT NULL,
+    last_name VARCHAR(20) NOT NULL,
+    date_of_birth DATE NOT NULL,
+    gender VARCHAR(1) NOT NULL,
+    home_town_id INT,
+    CONSTRAINT fk_customers_towns FOREIGN KEY (home_town_id)
+    REFERENCES towns(town_id)
+);
+
+CREATE TABLE flights (
+	flight_id INT AUTO_INCREMENT PRIMARY KEY,
+    departure_time DATETIME NOT NULL,
+    arrival_time DATETIME NOT NULL,
+    status VARCHAR(9),
+    origin_airport_id INT NOT NULL,
+    destination_airport_id INT NOT NULL,
+    airline_id INT NOT NULL,
+    CONSTRAINT fk_flights_airports_roigin FOREIGN KEY (origin_airport_id)
+    REFERENCES airports(airport_id),
+    CONSTRAINT fk_flights_airports_destination FOREIGN KEY (destination_airport_id)
+    REFERENCES airports(airport_id),
+    CONSTRAINT fk_flights_airlines FOREIGN KEY (airline_id)
+    REFERENCES airlines(airline_id)
+);
+
+CREATE TABLE tickets (
+	ticket_id INT AUTO_INCREMENT PRIMARY KEY,
+    price DECIMAL(8,2) NOT NULL,
+    class VARCHAR(6),
+    seat VARCHAR(5) NOT NULL,
+    customer_id INT NOT NULL,
+    flight_id INT NOT NULL,
+    CONSTRAINT fk_tickets_customers FOREIGN KEY (customer_id)
+    REFERENCES customers(customer_id),
+    CONSTRAINT fk_tickets_flight FOREIGN KEY (flight_id)
+    REFERENCES flights(flight_id)
+);
+
+#2
+
+INSERT INTO flights (departure_time, arrival_time, status, origin_airport_id, destination_airport_id, airline_id)
+SELECT '2017-06-19 14:00:00',
+	   '2017-06-21 11:00:00',
+       CASE a.airline_id MOD 4
+       WHEN 0 THEN 'Departing'
+       WHEN 1 THEN 'Delayed'
+       WHEN 2 THEN 'Arrived'
+       WHEN 3 THEN 'Canceled'
+       END,
+       ceil(sqrt(char_length(a.airline_name))),
+       ceil(sqrt(char_length(a.nationality))),
+       a.airline_id
+       FROM airlines AS a
+       WHERE a.airline_id <= 10;
+
+#3
+
+UPDATE flights SET airline_id = 1
+WHERE status = 'Arrived';
+
+#4
+
+UPDATE tickets as t
+SET price = price * 1.5
+WHERE t.flight_id in (SELECT f.flight_id FROM flights AS f
+							INNER JOIN airlines AS a
+                            on a.airline_id = f.airline_id
+                            WHERE a.rating in (SELECT max(a.rating) FROM airlines AS a));
+                            
+#5
+
+SELECT t.ticket_id, t.price, t.class, t.seat FROM tickets AS t;
+
+#6
+
+SELECT c.customer_id, concat_ws(' ', c.first_name, c.last_name) AS full_name, c.gender FROM customers AS c
+ORDER BY full_name, c.customer_id;
+
+#7
+
+SELECT `flight_id`, `departure_time`, `arrival_time` FROM flights
+WHERE `status` = 'Delayed'
+ORDER BY `flight_id`;
+
+#8
+
+SELECT a.airline_id, a.airline_name, a.nationality, a.rating FROM airlines AS a, flights AS f
+WHERE a.airline_id IN (f.airline_id)
+GROUP BY a.airline_id
+ORDER BY a.rating DESC, a.airline_id
+LIMIT 5;
+
+#9
+
+SELECT t.ticket_id, a.airport_name AS destination, concat_ws(' ', c.first_name, c.last_name) AS customer_name FROM tickets AS t
+INNER JOIN customers AS c
+ON t.customer_id = c.customer_id
+INNER JOIN flights AS f
+ON tc.flight_id = f.flight_id
+INNER JOIN airports AS a
+ON f.destination_airport_id = a.airport_id
+WHERE t.price < 5000 AND t.class = 'First'
+ORDER BY t.ticket_id;
+
+#10
+
+SELECT c.customer_id, concat_ws(' ', c.first_name, c.last_name) AS full_name, t.town_name AS home_town FROM customers AS c
+INNER JOIN towns AS t
+ON c.home_town_id = t.town_id
+INNER JOIN airports AS a
+ON t.town_id = a.town_id
+INNER JOIN flights AS f
+ON a.airport_id = f.origin_airport_id
+AND f.status = 'Departing'
+INNER JOIN tickets AS tc
+ON c.customer_id = tc.customer_id
+AND tc.flight_id = f.flight_id
+GROUP BY c.customer_id
+ORDER BY c.customer_id;
+
+#11
+
+SELECT DISTINCT c.customer_id, concat_ws(' ', c.first_name, c.last_name) AS full_name,(2016 - year(c.date_of_birth)) AS age FROM customers AS c
+INNER JOIN tickets AS t
+ON t.customer_id = c.customer_id
+INNER JOIN flights AS f
+ON t.flight_id = f.flight_id
+AND f.status = 'Departing'
+ORDER BY age, c.customer_id;
+
+#12
+
+SELECT c.customer_id, concat_ws(' ', c.first_name, c.last_name), max(t.price) AS ticket_price, a.airport_name AS destination FROM customers AS c
+INNER JOIN tickets AS t
+ON c.customer_id = t.customer_id
+INNER JOIN flights AS f
+ON t.flight_id = f.flight_id
+AND f.status = 'Delayed'
+INNER JOIN airports AS a
+ON f.destination_airport_id = a.airport_id
+GROUP BY c.customer_id
+ORDER BY ticket_price DESC, c.customer_id
+LIMIT 3;
+
+#13
+
+SELECT * FROM
+(SELECT f.flight_id, f.departure_time, f.arrival_time, a.airport_name AS orgin, a2.airport_name AS destination FROM flights AS f
+INNER JOIN airports AS a
+ON f.origin_airport_id = a.airport_id
+INNER JOIN airports AS a2
+ON f.destination_airport_id = a2.airport_id
+WHERE f.status = 'Departing'
+ORDER BY f.departure_time DESC, f.flight_id DESC
+LIMIT 5) AS p
+ORDER BY p.departure_time, p.flight_id;
+
+#14
+
+SELECT DISTINCT c.customer_id, concat_ws(' ', c.first_name, c.last_name) AS full_name,(2016 - year(c.date_of_birth)) AS age FROM customers AS c
+INNER JOIN tickets AS t
+ON t.customer_id = c.customer_id
+INNER JOIN flights AS f
+ON t.flight_id = f.flight_id
+AND f.status = 'Arrived'
+WHERE (2016 - year(c.date_of_birth)) < 21
+ORDER BY age DESC, c.customer_id;
+
+#15
+
+SELECT a.airport_id, a.airport_name, count(c.customer_id) AS passengers FROM airports AS a
+INNER JOIN flights AS f
+ON f.origin_airport_id = a.airport_id
+AND f.status = 'Departing'
+INNER JOIN tickets AS t
+ON t.flight_id = f.flight_id
+INNER JOIN customers AS c
+ON c.customer_id = t.customer_id
+GROUP BY a.airport_id, a.airport_name
+ORDER BY a.airport_id;
+
+#16
+
+CREATE TABLE customer_reviews (
+	review_id INT PRIMARY KEY,
+	review_content VARCHAR(255) NOT NULL,
+	review_grade INT,
+	airline_id INT,
+    CONSTRAINT fk_customer_reviews_airlines FOREIGN KEY (airline_id)
+    REFERENCES airlines(airline_id)
+);
+
+ALTER TABLE customer_reviews
+ADD COLUMN customer_id INT,
+ADD CONSTRAINT fk_customer_reviews_customers FOREIGN KEY (customer_id)
+REFERENCES customers(customer_id);
+
+CREATE TABLE customer_bank_accounts (
+	account_id INT PRIMARY KEY,
+	account_number VARCHAR(10) NOT NULL UNIQUE,
+	balance DECIMAL(10,2) NOT NULL,
+	customer_id INT,
+    CONSTRAINT fk_customer_bank_accounts_customers FOREIGN KEY (customer_id)
+    REFERENCES customers(customer_id)
+);
+
+delimiter $$
+CREATE PROCEDURE udp_submit_review(customer_id INT, review_content VARCHAR(255), review_grade INT, airline_name VARCHAR(30))
+BEGIN
+		
+        DECLARE review_id INT;
+        DECLARE airline_id INT;
+        SET review_id := (SELECT count(*) FROM customer_reviews) + 1;
+        SET airline_id := (SELECT a.airline_id FROM airlines AS a WHERE a.airline_name = airline_name);
+		
+		START TRANSACTION;
+        
+        INSERT INTO customer_reviews (review_id, review_content, review_grade, airline_id , customer_id)
+        VALUES (review_id, review_content, review_grade, airline_id , customer_id);
+        
+        if(airline_name not in (SELECT a.airline_name FROM airlines AS a)) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Airline does not exist.';
+        ROLLBACK;
+        end if;
+        COMMIT;
+END $$;                                
+                                       
+                                       
+delimiter ;
+
+#17
+
+delimiter $$
+CREATE PROCEDURE udp_purchase_ticket(customer_id INT, flight_id INT, ticket_price DECIMAL(8,2), class VARCHAR(6), seat VARCHAR(5))
+BEGIN
+		INSERT INTO tickets (price, class, seat, customer_id, flight_id)
+        VALUES(ticket_price, class, seat, customer_id, flight_id);
+		
+        if(ticket_price > (SELECT cba.balance FROM customer_bank_accounts  AS cba where cba.customer_id = customer_id)) THEN
+			SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Insufficient bank account balance for ticket purchase.';
+            ROLLBACK;
+            ELSE 
+            UPDATE customer_bank_accounts
+            SET balance = balance - ticket_price;
+            COMMIT;
+            END IF;
+            
+end $$;
+
+delimiter ;
+
+#18
+
+CREATE TABLE arrived_flights (
+	flight_id INT PRIMARY KEY,
+	arrival_time DATETIME NOT NULL,
+	origin VARCHAR(50) NOT NULL,
+	destination VARCHAR(50) NOT NULL,
+	passengers INT NOT NULL
+
+);

@@ -1,0 +1,165 @@
+#1
+
+SELECT count(`id`) AS 'count' FROM wizzard_deposits;
+
+#2
+
+SELECT max(`magic_wand_size`) AS 'longest_magic_wand' FROM wizzard_deposits;
+
+#3
+
+SELECT `deposit_group`, max(`magic_wand_size`) AS 'longest_magic_wand' FROM wizzard_deposits
+GROUP BY `deposit_group`
+ORDER BY 2, 1;
+
+#4
+
+SELECT w.`deposit_group` FROM wizzard_deposits w,
+(SELECT w.`deposit_group` ,avg(w.`magic_wand_size`) AS av_size FROM wizzard_deposits w
+GROUP BY w.`deposit_group`) AS avg_size
+WHERE w.`deposit_group` = avg_size.`deposit_group`
+ORDER BY avg_size.av_size 
+LIMIT 1;
+
+#5
+
+SELECT `deposit_group`, sum(`deposit_amount`) AS 'total_sum' FROM wizzard_deposits
+GROUP BY `deposit_group`
+ORDER BY 2;
+
+#6
+
+SELECT `deposit_group`, sum(`deposit_amount`) AS 'total_sum' FROM wizzard_deposits
+WHERE `magic_wand_creator` = 'Ollivander family' 
+GROUP BY `deposit_group`
+ORDER BY 2 DESC;
+
+#7
+
+SELECT `deposit_group`, sum(`deposit_amount`) AS 'total_sum' FROM wizzard_deposits
+WHERE `magic_wand_creator` = 'Ollivander family' 
+GROUP BY `deposit_group`
+HAVING sum(`deposit_amount`) < 150000
+ORDER BY 2 DESC;
+
+#8
+
+SELECT `deposit_group`, `magic_wand_creator`, min(`deposit_charge`) FROM wizzard_deposits
+GROUP BY `deposit_group`, `magic_wand_creator`
+ORDER BY `magic_wand_creator`, `deposit_group`;
+
+#9
+
+SELECT CASE WHEN `age` BETWEEN 0 AND 10 THEN '[0-10]' 
+            WHEN `age` BETWEEN 11 AND 20 THEN '[11-20]' 
+            WHEN `age` BETWEEN 21 AND 30 THEN '[21-30]'
+            WHEN `age` BETWEEN 31 AND 40 THEN '[31-40]'
+            WHEN `age` BETWEEN 41 AND 50 THEN '[41-50]'
+            WHEN `age` BETWEEN 51 AND 60 THEN '[51-60]'
+            ELSE '[61+]'
+            end AS 'Age groups', 
+	   count(`id`) 'Count' FROM wizzard_deposits
+GROUP BY `Age groups`
+ORDER BY `age`;
+
+#10
+
+SELECT left(`first_name`, 1) AS 'first_letter' FROM wizzard_deposits
+WHERE `deposit_group` = 'Troll Chest'
+GROUP BY `first_letter`
+ORDER BY `first_letter`;
+
+#11
+
+SELECT `deposit_group`, `is_deposit_expired`, avg(`deposit_interest`) AS 'average_interest' FROM wizzard_deposits
+WHERE `deposit_start_date` > '1985-01-01'
+GROUP BY `deposit_group`, `is_deposit_expired`
+ORDER BY `deposit_group` DESC, `is_deposit_expired`;
+
+#12
+
+CREATE VIEW `v_rw_pw` AS
+SELECT 
+    w1.`first_name` AS 'host_wizard',
+    w1.`deposit_amount` AS 'host_wizard_deposit',
+    w2.`first_name` AS 'duest_wizard',
+    w2.`deposit_amount` AS 'duest_wizard_deposit'
+FROM
+    `wizzard_deposits` AS w1,
+    `wizzard_deposits` AS w2
+WHERE
+    w1.`id` + 1 = w2.`id`;
+    
+    
+SELECT 
+    SUM(`host_wizard_deposit` - `duest_wizard_deposit`) AS 'sum_difference'
+FROM
+    v_rw_pw;
+    
+#13
+
+SELECT `department_id`, min(`salary`) AS 'MinSalary' FROM employees
+WHERE `hire_date` > '2000-01-01' 
+GROUP BY `department_id`
+HAVING `department_id` = 2 OR `department_id` = 5 OR `department_id` = 7
+ORDER BY `department_id`;
+
+#14
+
+CREATE TABLE avg_salaries AS
+SELECT *
+FROM employees AS e
+WHERE e.salary > 30000;
+
+DELETE FROM avg_salaries
+WHERE manager_id = 42;
+
+UPDATE avg_salaries
+	SET salary = salary + 5000
+	WHERE department_id = 1;
+	
+SELECT a.department_id, AVG(a.salary)
+FROM avg_salaries AS a
+GROUP BY a.department_id;
+	
+
+
+#15
+
+SELECT `department_id`, max(`salary`) AS max_salary FROM employees
+GROUP BY `department_id`
+HAVING max_salary NOT BETWEEN 30000 and 70000
+ORDER BY `department_id`;
+
+#16
+
+SELECT count(*) AS 'count' FROM employees
+WHERE `manager_id` IS NULL;
+
+#17
+SELECT e.department_id, max(e.salary) AS third_highest_salary FROM employees e,
+		(SELECT e.department_id, max(e.salary) AS s_max_salary FROM employees e,
+					(SELECT e.department_id, max(e.salary) AS f_max_salary FROM employees e
+					GROUP BY e.department_id) AS first_salary
+		WHERE e.department_id = first_salary.department_id 
+        ANd e.salary < first_salary.f_max_salary
+		GROUP BY e.department_id) AS second_salary
+WHERE e.department_id = second_salary.department_id 
+ANd e.salary < second_salary.s_max_salary
+GROUP BY e.department_id
+ORDER BY e.department_id;
+
+#18
+
+SELECT e.first_name, e.last_name, e.department_id FROM employees e,
+(SELECT e.department_id, avg(e.salary) AS av_salary FROM employees e
+GROUP BY e.department_id) AS avg_salary
+WHERE e.department_id = avg_salary.department_id
+AND e.salary > avg_salary.av_salary
+ORDER BY e.department_id
+LIMIT 10;
+
+#19
+
+SELECT `department_id`, sum(`salary`) AS 'total_salary' FROM employees
+GROUP BY `department_id`;

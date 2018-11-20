@@ -1,0 +1,226 @@
+CREATE DATABASE closed_judge_system;
+USE closed_judge_system;
+
+#1
+
+CREATE TABLE users (
+	id INT PRIMARY KEY,
+	username VARCHAR(30) UNIQUE NOT NULL,
+	password VARCHAR(30) NOT NULL,
+	email VARCHAR(50)
+
+);
+
+CREATE TABLE categories (
+	id INT PRIMARY KEY,
+	name VARCHAR(50) NOT NULL,
+	parent_id INT,
+    CONSTRAINT fk_categories_categories FOREIGN KEY (parent_id)
+	REFERENCES categories(id)
+);
+
+CREATE TABLE contests (
+	id INT PRIMARY KEY,
+	name VARCHAR(50) NOT NULL,
+	category_id INT,
+	CONSTRAINT fk_contests_categories FOREIGN KEY (category_id)
+    REFERENCES categories(id)
+);
+
+CREATE TABLE problems (
+	id INT PRIMARY KEY,
+	name VARCHAR(100) NOT NULL,
+	points INT NOT NULL,
+	tests INT DEFAULT 0,
+	contest_id INT,
+    CONSTRAINT fk_problems_contests FOREIGN KEY (contest_id)
+	REFERENCES contests(id)
+);
+
+CREATE TABLE submissions (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	passed_tests INT NOT NULL,
+	problem_id INT,
+	user_id INT,
+    CONSTRAINT fk_submissions_problems FOREIGN KEY (problem_id)
+    REFERENCES problems(id),
+    CONSTRAINT fk_submissions_users FOREIGN KEY (user_id)
+    REFERENCES users(id)
+);
+
+CREATE TABLE users_contests (
+	user_id INT,
+	contest_id INT,
+    CONSTRAINT pk_users_contests PRIMARY KEY (user_id, contest_id),
+    CONSTRAINT fk_users_contests_users FOREIGN KEY (user_id)
+    REFERENCES users(id),
+	CONSTRAINT fk_users_contests_contests FOREIGN KEY (contest_id)
+    REFERENCES contests(id)
+);
+
+#2
+
+INSERT INTO submissions (passed_tests, problem_id, user_id)
+SELECT ceiling(sqrt(pow(char_length(p.name), 3)) - char_length(p.name)),
+	   p.id,
+       ceiling((p.id * 3) / 2)
+from problems AS p
+WHERE p.id <= 10;
+
+#3
+
+UPDATE problems SET tests = CASE id MOD 3
+								   WHEN 0 THEN (SELECT char_length(ct.name) FROM contests AS c 
+                                   INNER JOIN categories AS ct ON c.category_id = ct.id WHERE contest_id = c.id )
+                                   WHEN 1 THEN (SELECT sum(s.id) FROM submissions AS s WHERE id = s.problem_id )
+								   WHEN 2 THEN (SELECT char_length(c.name) FROM contests AS c  WHERE contest_id = c.id )
+                                   end
+ WHERE tests = 0;                               
+                                   
+SELECT char_length(ct.name) FROM problems AS p INNER JOIN contests AS c ON p.contest_id = c.id 
+                                   INNER JOIN categories AS ct ON c.category_id = ct.id WHERE p.tests = 0;                                  
+SELECT sum(s.id) FROM problems AS p INNER JOIN submissions AS s ON p.id = s.problem_id;
+
+#4
+
+ALTER TABLE users
+DELETE s.username FROM users s LEFT JOIN users_contests uc ON s.id = uc.user_id  LEFT JOIN contests AS c ON c.id = uc.contest_id
+WHERE uc.user_id is NULL; 
+
+SELECT * from users s LEFT JOIN users_contests uc ON s.id = uc.user_id;
+#5
+
+SELECT s.id, s.username, s.email FROM users AS s
+ORDER BY s.id;
+
+#6 
+
+SELECT c.id, c.name FROM categories AS c
+WHERE c.parent_id is NULL
+ORDER BY c.id;
+
+#7
+
+#8
+
+SELECT p.id, concat_ws(' - ', ca.name, cn.name, p.name) AS full_path FROM problems AS p
+INNER JOIN contests AS cn
+ON p.contest_id = cn.id
+INNER JOIN categories AS ca
+ON cn.category_id = ca.id
+ORDER BY p.id;
+
+#9 c.id, c.name
+
+SELECT c.id, c.name FROM categories AS c
+INNER JOIN categories AS c2
+ON c.id = c2.id
+AND c.id NOT IN (c.parent_id)
+ORDER BY c.name, c.id;
+
+#10
+
+SELECT DISTINCT u.id, u.username, u.password FROM users AS u
+INNER JOIN users AS u2
+ON u.id= u2.id
+WHERE u.password = u2.password
+ORDER BY u.username, u.id;
+
+#11
+SELECT * FROM
+(SELECT c.id, c.name , count(*) AS contestants FROM contests AS c
+INNER JOIN users_contests AS uc
+ON c.id = uc.contest_id
+INNER JOIN users AS u
+ON uc.user_id = u.id
+GROUP BY c.id, c.name
+ORDER BY contestants DESC, c.id DESC 
+LIMIT 5) AS p
+ORDER BY p.contestants, p.id;
+
+#12
+
+SELECT s.id, u.username, p.name, concat_ws(' / ', s.passed_tests, p.tests) AS result FROM submissions AS s
+INNER JOIN users AS u
+ON s.user_id = u.id
+INNER JOIN users_contests AS uc
+ON u.id = uc.user_id
+INNER JOIN contests AS c
+ON uc.contest_id = c.id
+INNER JOIN problems AS p
+ON p.contest_id = c.id
+WHERE u.id = 29
+ORDER BY s.id DESC;
+
+#13
+
+SELECT c.id, c.name, sum(p.points) AS maximum_points FROM contests AS c
+INNER JOIN problems AS p
+ON c.id = p.contest_id
+GROUP BY c.id, c.name
+ORDER BY maximum_points DESC, c.id;
+
+#14
+
+SELECT c.id, c.name, count(s.id) AS submissions FROM contests AS c
+INNER JOIN users_contests AS uc
+ON c.id = uc.contest_id
+INNER JOIN users AS u
+ON u.id = uc.user_id
+Inner join problems AS p
+ON p.contest_id = c.id
+INNER JOIN submissions AS s
+ON u.id = s.user_id
+GROUP BY c.id, c.name
+ORDER BY submissions DESC, c.id;
+
+#15
+
+delimiter $$
+CREATE PROCEDURE udp_login(username varchar(30), password varchar(30)) 
+BEGIN
+
+		DECLARE id INT;
+        DECLARE email VARCHAR(50);
+        SET id := (SELECT u.id FROM users AS u WHERE u.username = username);
+        SET email := (SELECT u.email FROM users AS u WHERE u.username = username);
+        
+        if(username NOT iN (SELECT u.username FROM users AS u)) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Username does not exist!';
+        ELSEIF(username iN (SELECT u.username FROM users AS u) and password NOT IN (SELECT u.password FROM users AS u)) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Password is incorrect!';
+        ELSEIF(username in (SELECT lu.username FROM logged_in_users AS lu)) THEN
+        SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'User is already logged in!';
+        ELSE
+        INSERT INTO logged_in_users (id, username, password, email)
+        VALUES (id, username, password, email);
+        end if;
+end $$
+delimiter ;
+
+#16
+
+delimiter $$
+
+CREATE PROCEDURE udp_evaluate(id INT)
+BEGIN
+			DECLARE problem VARCHAR(100);
+            DECLARE user VARCHAR(30);
+			DECLARE result INT;
+            SET problem := (SELECT p.name FROM submissions AS s INNER JOIN problems AS p on s.problem_id = p.id WHERE s.id = id);
+			SET user := (SELECT u.username FROM submissions AS s INNER JOIN users AS u on s.user_id = u.id WHERE s.id = id);
+            SET result := (SELECT ceiling((p.points / p.tests) * s.passed_tests) FROM submissions AS s INNER JOIN problems AS p ON s.problem_id = p.id WHERE s.id = id);
+
+			if(id NOT in (SELECT s.id FROM submissions AS s)) THEN
+            SIGNAL SQLSTATE '45000' SET MESSAGE_TEXT = 'Submission does not exist!';
+            ELSE
+            INSERT INTO evaluated_submissions (id, problem, user, result)
+            VALUES (id, problem, user, result);
+			end if;
+end $$
+
+
+delimiter ;
+
+
+

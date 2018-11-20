@@ -1,0 +1,32 @@
+function increment(selector) {
+    let div = $(selector)
+    let textArea = $('<textarea>')
+    div.append(textArea)
+    textArea.attr('class', 'counter')
+    textArea.val(0)
+    textArea.prop('disabled', true)
+    let buttonIncrement = $('<button>')
+    let buttonAdd = $('<button>')
+    buttonIncrement.attr('class', 'btn')
+    buttonIncrement.attr('id', 'incrementBtn')
+    buttonIncrement.text('Increment')
+    buttonAdd.attr('class', 'btn')
+    buttonAdd.attr('id', 'addBtn')
+    buttonAdd.text('Add')
+    div.append(buttonIncrement)
+    div.append(buttonAdd)
+    let ul = $('<ul>')
+    ul.attr('class', 'results')
+    div.append(ul)
+    buttonIncrement.on('click', function () {
+        let textAreaValue = parseFloat(textArea.val())
+        textAreaValue++
+        textArea.val(textAreaValue)
+    })
+    buttonAdd.on('click', function () {
+        let li = $('<li>')
+        let textAreaValue = textArea.val()
+        li.text(textAreaValue)
+        ul.append(li)
+    })
+}
